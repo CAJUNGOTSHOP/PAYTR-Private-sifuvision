@@ -28,14 +28,20 @@ jobs:
         flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
         # exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
-Check failure on line 36 in .github/workflows/python-package-conda.yml
-
-
-GitHub Actions
-/ .github/workflows/python-package-conda.yml
-Invalid workflow file
-
-You have an error in your yaml syntax on line 36
+- name: Test with pytest
+  run: |
+    conda install pytest
+    pytest
+- name: Setup Go environment
+  uses: actions/setup-go@v5.3.0
+  with:
+    go-version: # optional
+    go-version-file: # optional
+    check-latest: # optional
+    token: ${{ github.server_url == 'https://github.com' && github.token || '' }}
+    cache: true
+    cache-dependency-path: # optional
+    architecture: # optional
     go-version: # optional
     go-version-file: # optional
     check-latest: # optional
