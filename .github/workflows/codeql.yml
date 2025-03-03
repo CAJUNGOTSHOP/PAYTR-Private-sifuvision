@@ -95,6 +95,8 @@ jobs:
     category: "/language:${{ matrix.language }}"
     # Token for the repository. Can be passed in using `{{ secrets.GITHUB_TOKEN }}`.
     repo-token: ${{ github.token }} # optional, default is ${{ github.token }}
+    # Token for the repository. Can be passed in using `{{ secrets.GITHUB_TOKEN }}`.
+    repo-token: ${{ github.token }} # optional, default is ${{ github.token }}
     # The message to post on the issue when tagging it. If 
     stale-issue-message: # optional
     # The message to post on the pull request when tagging it. If none provided, will not mark pull requests stale.
