@@ -2,7 +2,4 @@
 34|   AWS_REGION: MY_AWS_REGION                   # set this to your preferred AWS region, e.g. us-west-1
 35|   ECR_REPOSITORY: MY_ECR_REPOSITORY           # set this to your Amazon ECR repository name
 36|   ECS_CLUSTER: MY_ECS_CLUSTER                 # set this to your Amazon ECS cluster name
-37|   ECS_TASK_DEFINITION: MY_ECS_TASK_DEFINITION # set this to the path to your Amazon ECS task definition
-38|                                                # file, e.g. .aws/task-definition.json
-39|   CONTAINER_NAME: MY_CONTAINER_NAME           # set this to the name of the container in the
-40|                                                # containerDefinitions section of your task definition
+37|   ECS_TASK ▋
