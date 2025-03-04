@@ -32,12 +32,9 @@ on:
 
 33| env:
 34|   AWS_REGION: MY_AWS_REGION                   # set this to your preferred AWS region, e.g. us-west-1
-35|   ECR_REPOSITORY: MY_ECR_REPOSITORY           ▋
-    go-version: # optional
-    go-version-file: # optional
-    check-latest: # optional
-    token: ${{ github.server_url == 'https://github.com' && github.token || '' }}
-    cache: true
+35|   ECR_REPOSITORY: MY_ECR_REPOSITORY           # set this to your Amazon ECR repository name
+36|   ECS_CLUSTER: MY_ECS_CLUSTER                 # set this to your Amazon ECS cluster name
+37|   ECS_TASK ▋
     cache-dependency-path: # optional
     architecture: # optional
   ECS_CLUSTER: MY_ECS_CLUSTER                 # set this to your Amazon ECS cluster name
