@@ -30,12 +30,9 @@ on:
   push:
     branches: [ "main" ]
 
-env:
-  AWS_REGION: MY_AWS_REGION                   # set this to your preferred AWS region, e.g. us-west-1
-  ECR_REPOSITORY: MY_ECR_REPOSITORY           # set this to your Amazon ECR repository name
-- name: Setup Go environment
-  uses: actions/setup-go@v5.3.0
-  with:
+33| env:
+34|   AWS_REGION: MY_AWS_REGION                   # set this to your preferred AWS region, e.g. us-west-1
+35|   ECR_REPOSITORY: MY_ECR_REPOSITORY           ▋
     go-version: # optional
     go-version-file: # optional
     check-latest: # optional
