@@ -71,7 +71,7 @@
     "ethereumjs-wallet": "^1.0.1",
     "glob": "^8.0.3",
     "graphlib": "^2.1.8",
-    "hardhat": "^2.20.0",
+    "hardhat": "^2.23.0",
     "hardhat-exposed": "^0.3.3",
     "hardhat-gas-reporter": "^2.0.0",
     "hardhat-ignore-warnings": "^0.2.0",
@@ -89,7 +89,7 @@
     "solidity-ast": "^0.4.25",
     "solidity-coverage": "^0.8.0",
     "solidity-docgen": "^0.6.0-beta.29",
-    "undici": "^5.22.1",
+    "undici": "^5.29.0",
     "web3": "^4.2.0",
     "yargs": "^17.0.0"
   }
